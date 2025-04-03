@@ -1,0 +1,432 @@
+/*
+    Variables
+*/
+:root
+{
+    --bg-color: #FAF9F6;
+    --text-color: #2E2E2E;
+    --brand-color: #5D5FEF;
+}
+
+/*
+    Styles Reset
+*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h5, p
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+    Global Styles
+*/
+
+body
+{
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.2;
+    color: var(--text-color);
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+p
+{
+    line-height: 1.4;
+}
+
+.container
+{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+/*
+    Banner Styles
+*/
+
+.banner
+{
+    background-color: var(--brand-color);
+    color: white;
+    padding: 6px 0px;
+    text-align: center;
+}
+
+/*
+    Header Styles
+*/
+
+header
+{
+    background-color: var(--bg-color);
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.header-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.header-wrapper > div
+{
+    width: 50%;
+}
+
+header img
+{
+    width: 45%;
+}
+
+/*
+    About Section
+*/
+
+.about
+{
+    text-align: center;
+}
+
+.about-wrapper
+{
+    max-width: 900px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.about-wrapper > img
+{
+    width: 50px;
+}
+
+/*
+    Learn Section
+*/
+
+.learn
+{
+    background-color: var(--bg-color);
+}
+
+/*
+    Testimonials Section
+*/
+
+.testimonials-card
+{
+    max-width: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--bg-color);
+    padding: 25px;
+    border: 1px solid rgb(224, 224, 224);
+    transition: all 250ms ease;
+}
+
+.testimonials-card:hover
+{
+    transform: translateY(-5px);
+}
+
+.testimonials-card img 
+{
+    width: 70px;
+    border-radius: 50%;
+}
+
+/*
+    CTA Section
+*/
+
+.cta
+{
+    background-color: var(--brand-color);
+    color: white;
+    text-align: center;
+}
+
+.cta-wrapper
+{
+    max-width: 900px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*
+    Footer Styles
+*/
+
+footer
+{
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.footer-links-wrap
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-link-underline
+{
+    height: 2px;
+    width: 0%;
+    background-color: var(--brand-color);
+    transition: all 250ms ease;
+}
+
+.footer-link-block:hover .footer-link-underline
+{
+    width: 100%;
+}
+
+.footer-link
+{
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/*
+    Font Styles
+*/
+
+h1
+{
+    font-size: 56px;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+h3
+{
+    font-size: 22px;
+}
+
+.fs-20
+{
+    font-size: 20px;
+}
+
+.weight-500
+{
+    font-weight: 500;
+}
+
+/*
+    Buttons Styles
+*/
+
+.button
+{
+    font-weight: 500;
+    padding: 12px 24px;
+    display: inline-block;
+    border: 1px solid var(--brand-color);
+    text-decoration: none;
+    background-color: var(--brand-color);
+    color: white;
+    border-radius: 6px;
+    transition: all 300ms ease;
+}
+
+.button:hover
+{
+   background-color: transparent;
+   color: var(--brand-color);
+}
+
+.button-white
+{
+    font-weight: 500;
+    padding: 12px 24px;
+    display: inline-block;
+    border: 1px solid white;
+    text-decoration: none;
+    background-color: white;
+    color: var(--brand-color);
+    border-radius: 6px;
+    transition: all 300ms ease;
+}
+
+.button-white:hover
+{
+   background-color: transparent;
+   color: white;
+}
+
+/*
+    Spacing Styles
+*/
+
+.section-80
+{
+    padding: 80px 0px;
+}
+
+.mb-10
+{
+    margin-bottom: 10px;
+}
+
+.mb-15
+{
+    margin-bottom: 15px;
+}
+
+.mb-20
+{
+    margin-bottom: 20px;
+}
+
+.mb-40
+{
+    margin-bottom: 40px;
+}
+
+/*
+    Layouts
+*/
+
+.grid-2
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-4
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+
+
+/*
+    Responsive Design
+*/
+
+/*
+    Tablet
+*/
+@media only screen and (max-width: 991px) {
+
+    h1
+    {
+        font-size: 42px;
+    }
+
+    h2
+    {
+        font-size: 32px;
+    }
+
+    .header-wrapper
+    {
+        flex-direction: column;
+    }
+
+    .header-wrapper > div
+    {
+        width: 100%;
+    }
+
+    .grid-4
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+/*
+    Mobile Landscape
+*/
+@media only screen and (max-width: 776px) {
+
+    h1
+    {
+        font-size: 38px;
+    }
+
+    .section-80
+    {
+        padding: 45px 0px;
+    }
+
+    .grid-4
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer
+    {
+        padding: 45px 0px;
+    }
+
+    header
+    {
+        padding-top: 45px;
+    }
+
+    header img 
+    {
+        width: 80%;
+    }
+}
+
+
+/*
+    Mobile
+*/
+@media only screen and (max-width: 480px) {
+
+    h1
+    {
+        font-size: 30px;
+    }
+
+    h2
+    {
+        font-size: 26px;
+    }
+
+    .testimonials-card
+    {
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
